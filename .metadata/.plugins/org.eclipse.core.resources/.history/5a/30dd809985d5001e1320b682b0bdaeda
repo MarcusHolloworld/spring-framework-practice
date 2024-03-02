@@ -1,0 +1,7 @@
+package com.springcore.auto.wire;
+
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+}

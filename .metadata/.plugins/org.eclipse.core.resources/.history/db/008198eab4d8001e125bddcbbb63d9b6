@@ -1,0 +1,31 @@
+package com.springcore.javaconfig;
+
+import org.springframework.stereotype.Component;
+
+
+public class Student {
+	
+	private Samosa somosa;
+	
+	
+	public Student(Samosa somosa) {
+		super();
+		this.somosa = somosa;
+	}
+
+
+	public Samosa getSomosa() {
+		return somosa;
+	}
+
+
+	public void setSomosa(Samosa somosa) {
+		this.somosa = somosa;
+	}
+
+
+	public void study() {
+		somosa.display();
+		System.out.println("student is reading book");
+	}
+}
