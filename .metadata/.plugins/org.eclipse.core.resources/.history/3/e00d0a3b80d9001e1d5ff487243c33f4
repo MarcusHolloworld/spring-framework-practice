@@ -1,0 +1,15 @@
+package com.spring.jdbc.dao;
+
+import com.spring.jdbc.entites.Student;
+
+public class StudentDaoImple implements StudentDao{
+
+	@Override
+	public int insert(Student student) {
+		
+		return 0;
+	}
+
+	
+	
+}
