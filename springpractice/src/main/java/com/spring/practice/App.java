@@ -3,6 +3,7 @@ package com.spring.practice;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -14,7 +15,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Project Stsrted....." );
-        ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/practice/config.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
         EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDaoImpl.class);
         //Employee employee = new Employee();
         //employee.setId(114);
