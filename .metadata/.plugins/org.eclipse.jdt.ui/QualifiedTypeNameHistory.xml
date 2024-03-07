@@ -23,6 +23,9 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="com.spring.jdbc.entites.Student"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="com.spring.jdbc.dao.StudentDaoImple"/>
+    <fullyQualifiedTypeName name="com.spring.jdbc.entites.Student"/>
+    <fullyQualifiedTypeName name="com.spring.jdbc.dao.StudentDao"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,8 +1,0 @@
-package com.springcore.auto.wire.annotation;
-
-public class Snippet {
-	public static void main(String[] args) {
-		constructor
-	}
-}
-
