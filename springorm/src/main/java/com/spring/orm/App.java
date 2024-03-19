@@ -12,16 +12,14 @@ import com.spring.orm.entities.Student;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Project Started" );
-        ApplicationContext context =  new ClassPathXmlApplicationContext("com/spring/orm/config.xml");
-        StudentDao studentDao = context.getBean("studentDao",StudentDao.class);
-        Student student = new Student();
-        student.setStudentId(1);
-        student.setStudentName("Rohit Bhowmik");
-        student.setStudentCity("Panskura");
-        int r = studentDao.insert(student);
-        System.out.println("Done...." + r);
+    public static void main( String[] args ) {
+    	
+    	ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+    	StudentDao studentDao = context.getBean("studentDao",StudentDao.class);
+    	
+    	Student student = new Student(1,"Mahadev Ghosh","Kharagpur");
+    	
+    	int r = studentDao.insert(student);
+    	System.out.println("Done..." + r);
     }
 }

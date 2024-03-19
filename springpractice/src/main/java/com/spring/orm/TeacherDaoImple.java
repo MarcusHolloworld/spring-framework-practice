@@ -2,9 +2,10 @@ package com.spring.orm;
 
 import org.springframework.orm.hibernate5.HibernateTemplate;
 
-import jakarta.transaction.Transactional;
+//import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
-@Transactional
+@Transactional(readOnly = false)
 public class TeacherDaoImple implements TeacherDao{
 	
 	private HibernateTemplate template;
